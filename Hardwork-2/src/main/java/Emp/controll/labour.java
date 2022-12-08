@@ -14,7 +14,7 @@ import jakarta.servlet.http.HttpSession;
 public class labour {
 	
     
-  //  public Empservice service;
+    public Empservice service;
 	@GetMapping ("/home")
 	public String newform() {
 		System.out.print("index mei");
@@ -28,7 +28,7 @@ public class labour {
 	}
 	@PostMapping("/register")
 	 public String regisEmp(@ModelAttribute entity  e) {
-//	service.addEmp(e);
+	service.addEmp(e);
 		 System.out.println(e);
 		 
 		 
